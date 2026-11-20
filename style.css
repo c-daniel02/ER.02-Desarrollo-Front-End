@@ -1,0 +1,190 @@
+/* Estilos para la página de Café Aroma */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f1e8;
+    color: #332820;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 16px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #493326;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.7em;
+}
+
+nav a {
+    margin-left: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 88%;
+    max-width: 900px;
+    margin: 28px auto;
+}
+
+section {
+    margin-bottom: 22px;
+    padding: 24px;
+    background-color: #fffdf8;
+}
+
+h2 {
+    margin-top: 0;
+    color: #65452f;
+}
+
+.portada {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.portada div,
+.portada img {
+    width: 50%;
+}
+
+.portada img {
+    height: 270px;
+    object-fit: cover;
+}
+
+.boton,
+button {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 0;
+    background-color: #65452f;
+    color: white;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton:hover,
+button:hover {
+    background-color: #493326;
+}
+
+.lista-menu {
+    max-width: 460px;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-menu li {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 4px;
+    border-bottom: 1px solid #c9bcae;
+}
+
+form {
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #8b7a6b;
+    background-color: white;
+    font: inherit;
+}
+
+button {
+    margin-top: 15px;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #a8783e;
+    outline-offset: 2px;
+}
+
+.nota {
+    color: #665d54;
+    font-size: 0.9em;
+}
+
+footer {
+    padding: 18px;
+    background-color: #493326;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 4px;
+}
+
+footer a {
+    color: white;
+}
+
+/* Cambios para que la página se vea bien en celulares */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 4px 7px;
+    }
+
+    main {
+        width: 92%;
+        margin: 16px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .portada {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .portada div,
+    .portada img {
+        width: 100%;
+    }
+
+    .portada img {
+        height: 220px;
+    }
+
+}
