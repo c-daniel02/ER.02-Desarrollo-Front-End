@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aroma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Café Aroma</h1>
+        <nav aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#menu">Menú</a>
+            <a href="#ubicacion">Ubicación</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="portada">
+            <div>
+                <h2>Un café para disfrutar</h2>
+                <p>Preparamos café y pan artesanal para alegrarte la mañana.</p>
+                <a class="boton" href="#menu">Ver menú</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt="Taza de café sobre una mesa">
+        </section>
+
+        <section id="menu">
+            <h2>Menú</h2>
+            <p>Algunos de nuestros productos:</p>
+            <ul class="lista-menu">
+                <li><strong>Espresso</strong><span>$35</span></li>
+                <li><strong>Capuchino</strong><span>$48</span></li>
+                <li><strong>Latte</strong><span>$50</span></li>
+                <li><strong>Pan del día</strong><span>$30</span></li>
+            </ul>
+            <p class="nota">Precios sujetos a cambios.</p>
+        </section>
+
+        <section id="ubicacion">
+            <h2>Visítanos</h2>
+            <p>Estamos en el centro de la ciudad.</p>
+            <p><strong>Horario:</strong> lunes a sábado, de 8:00 a. m. a 8:00 p. m.</p>
+            <a href="https://www.google.com/maps/search/cafeteria+centro+de+la+ciudad" target="_blank" rel="noopener noreferrer">Buscar en el mapa</a>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Envíanos un mensaje.</p>
+            <form action="mailto:hola@cafearoma.mx" method="post" enctype="text/plain">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input id="correo" name="correo" type="email" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>Café Aroma</p>
+        <a href="#inicio">Volver al inicio</a>
+    </footer>
+</body>
+</html>
